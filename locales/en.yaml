@@ -1,0 +1,55 @@
+locale:
+  icon: 🇺🇸
+  name: English
+
+welcome: |
+  Hi ${from.first_name || from.username || ''}!
+
+  This is the Waff.ly chatbot.
+  It can transform your voice messages into editable text.
+  To use it, please sign in (/login) or create your Waff.ly account (/account).
+  Don't forget to set /language.
+  More information at /help.
+
+  Support: @waffly_support
+
+errors:
+  not-logged-in: |
+    You are not logged in.
+    Please login (/login) or create new account (/account)
+  generic: Something went wrong. Please try again.
+
+info:
+  hi-sign-out: |
+    Hi @${from.username || from.first_name || ''}!
+    You can /signout if it's not you.
+  logged-in: You have successfully logged in!
+  logged-out: You logged-out succesfully.
+  description: |
+    Hi! Waff.ly chatbot can transform your voice messages into editable text.
+    To use it, please send or forward a voice message.
+
+    Don't forget to set /language.
+    More information at /help.
+    Support: @waffly_support
+  login-tip: |
+    Please sign-in using link below:
+    ${authUrl}
+  lang-switched: 'Language for your audio & voice messages switched to: ${lang}'
+  wafflified: |
+    Hi! Your message was succesfully wafflified.
+    Now you can manage it in https://app.waffly.ga/.
+
+help: Hi! This is the help message. It wil be filled in by @cherepukhin or someone else
+menu:
+  back: 🔙 back
+  main: 🏠 home
+  settings: ⚙️ Settings
+  language: 🏳️ Language
+  login: ▶️ Login
+settings:
+  body: |
+    Feel free to set the settings you prefer.
+    Or as the developer:
+    Feel free to add the things you want users to adjust.
+  language: 'Select your language:'
